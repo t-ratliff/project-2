@@ -2,8 +2,18 @@ body{
 	background-color: #4d4d4d
 }
 
+.nav {
+	visibility: hidden;
+	height: 100%;
+	width: 10%;
+	background-color: red;
+}
+
 .head div {
-	transform: scale(20%);
+	display: block;
+	height: 25%;
+    width: 25%;
+    margin: 0 auto;
 }
 
 h1{
