@@ -1,3 +1,12 @@
+.sidebar-nav li{
+	width: 20%;
+	padding: 8px;
+}
+
+/*#sidebar-wrapper {
+	width: 10%;
+}*/
+
 body{
 	background-color: #4d4d4d
 }
