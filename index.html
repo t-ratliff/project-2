@@ -100,7 +100,7 @@
 <!--                     <button class="btn btn-default" type="submit">See it NOW!</button>
                     <a class="btn btn-default" href="#" role="button">Link</a> -->
                         <article>
-                            <div class="center"><a class="btn" href="#">SnakeOil</a></div>
+                            <div class="center"><a class="btn" href="#products">SnakeOil</a></div>
                         </article>  
                 </div>
             </div>
@@ -109,7 +109,7 @@
 	
         <!-- middle -->
         <div class="middle">
-            <div class="product">
+            <div class="product" id="products">
                 <div class="glow glow1">
                 	<img src="../img/Bottle-green.jpg" class="productbottle">
                 </div>
@@ -127,7 +127,7 @@
                 	<img src="../img/Bottle-orange.jpg" class="productbottle">
                 </div>
                 <h2>Advanced</h2>
-                <p> When you need a little more <b>SnakeOil Advanced</b> has your back, its like your own personal wing-man leading to a better you. Better than Classic in every way, and at a reasonable price.<br><br></p>
+                <p> When you need a little more <b>SnakeOil Advanced</b> has your back, its like your own personal wing-man leading to a better you. Better than Classic in every way, and at a reasonable price.</p>
                     <div class="productbutton">
                         <article>
                             <div class="center"><a class="btn" href="#">Buy now</a></div>
@@ -141,7 +141,7 @@
                 	<img src="../img/Bottle-purple.jpg" class="productbottle">
                 </div>
                 <h2>Ultra</h2>
-                <p>Face it, your just not ready for <b>SnakeOil Ultra</b>. Not everyone can handle the raw power. You probably shouldn't even be reading this, just to be safe.<br><br></p>
+                <p>Face it, your just not ready for <b>SnakeOil Ultra</b>. Not everyone can handle the raw power. You probably shouldn't even be reading this, just to be safe.</p>
                     <div class="productbutton">
                         <article>
                             <div class="center"><a class="btn" href="#">Buy now</a></div>
@@ -166,13 +166,9 @@
             </div>
             
             <div class="topP">
-            	<p>Just look at this guy, <i>look at him,</i> you want to be him. We want you to be him too. With <b>SnakeOil</b> you can be him. If you really want to ensure your success use <b>SnakeOil Ultra</b> and grab the bull by the horns, you know he has because he uses <b>SnakeOil</b></p>
+            	<p>Just look at this guy, <i>look at him,</i> you want to be him. We want you to be him too. With <b>SnakeOil</b> you can be him. If you really want to ensure your success use <b>SnakeOil</b> and grab the bull by the horns, you know he has because he uses <b>SnakeOil</b></p>
             </div>
         </div>
-
-
-
-
 
 
 
@@ -195,14 +191,32 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-
-    <!-- Menu Toggle Script -->
+	
     <script>
+//    <!-- Menu Toggle Script -->
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         }).click();
-    </script>
+
+		
+//smooth scroll	
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+		
+	</script>
 
 
 </body>
