@@ -206,7 +206,8 @@ body {
   letter-spacing: 0.3em;
   color: rgba(223,190,106,0.7);
   border-radius: 0;
-  padding: 18px 80px 20px;
+/*  padding: 18px 80px 20px;*/
+  padding: 18px 25% 20px;
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
   background: -webkit-linear-gradient(180deg, rgba(223,190,106,0.8), rgba(146,111,52,0.8), rgba(34,34,34,0), rgba(34,34,34,0));
@@ -298,6 +299,38 @@ margin-left: 20px;
     width: 100%;
 }
 
+/*even buttons*/
+/*
+.middle {	
+  display: flex;
+  overflow: hidden;
+}
+.middle .product {
+  flex: 1;
+  padding: 20px;
+}
+.middle .product:nth-child(1) { 
+	order: 1;
+}
+.middle .product:nth-child(2) { 
+    order: 0;
+}
+.middle .product:nth-child(3) { 
+    order: 2;
+}
+
+.product {
+	position: relative;
+	margin: 10px;
+	
+}
+
+.productbutton{
+	position: absolute;
+	bottom: -40px;
+}
+*/
+
 /*glow ===========================================================*/
 .glow {
   position: relative;
@@ -359,11 +392,11 @@ margin-left: 20px;
   .bottom {
 	padding: 120px;
 	width: 100%;
-	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 100%),url(../img/man2.jpg);
+	background: linear-gradient(to right, rgba(0,0,0,0) 20%,rgba(0,0,0,0) 40%,rgba(0,0,0,1) 75%,rgba(0,0,0,1) 100%),url(../img/man2.jpg);
 	background-repeat: no-repeat;
     background-size: auto 150%;
     background-position: -475px -1px;
-	background-attachment: fixed;
+/*	background-attachment: fixed;*/
 	text-align: center;
 }
 
@@ -430,30 +463,134 @@ p {
 
 
 /*Media Queries =======================================================*/
-
 /*desktop 1440x900, tablet portrait 768x1024, tablet landscape 1024x768, mobile phone 640x960*/
 
 
 
 @media (max-width: 1024px) {
-body {
-	color: turquoise
+/*
+	body {
+		color: turquoise
+	}
+*/
+	.topP {
+    	width: 45%;
+	}
+	
+	.topButton {
+		margin-bottom: 50px;
+	}
+	
+	.bottom {
+		padding: 0px;
+		width: 100%;
+		background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%),url(../img/man2.jpg);
+		background-repeat: no-repeat;
+		background-size: auto 130%;
+		background-position: -150px -1px;
+	}
+
+	.middle {
+		padding-top: 0px;
+		margin-top: 0;
+	}
+	
+	.CoolTag {
+		width: 45%;
+		padding-top: 60px;
+	}
+	.bottom .topP {
+		padding: 0;
+		padding-bottom: 80px;
+	}
+
+	.product .btn {
+		  padding: 18px 20% 20px;
+	}
+
+	
 }
-  }
+	
+
+
+
+
 
 @media (max-width: 768px) {
 
+/*
 	body {
-	color: magenta
-}
+		color: magenta
+	}
+*/
+	
+	.biglogo {
+		width: 50%
+	}
+	
+	.topP {
+		width: 55%;
+	}
+	
+	.topButton {
+		margin-bottom: 0;
+	}
+	
+	.middle {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		width: 100vw;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.product {
+		display: inline-block;
+		width: 28%;
+		padding: 4%;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	.productbottle {
+		width: 100%;
+	}
+
+	.bottom {
+		padding: 0px;
+		width: 100%;
+		background: linear-gradient(
+		  rgba(0, 0, 0, 0.60), 
+		  rgba(0, 0, 0, 0.60)
+		),url(../img/man2.jpg);
+	/*	background-repeat: no-repeat;*/
+		background-size: auto 150%;
+		background-position: 110% -1px;
+	/*	background-attachment: ;*/
+	/*	text-align: center;*/
+	}
+	
+	.bottom .topP {
+		padding: 30px;
+		padding-bottom: 80px;
+	}
+	
+	
 	
   }
 
-@media (max-width: 960px) {
+
+
+
+
+@media (max-width: 640px) {
 	
+/*
 body {
 	color: firebrick
 }
+*/
 
 /*top*/
 	.biglogo {
@@ -488,8 +625,6 @@ body {
 	padding: 0;
     padding-bottom: 90px;
 	margin: auto;
-/*    text-align: left;*/
-/*	vertical-align: top;*/
 }
 	.product p {
 		width: 80%;
@@ -497,22 +632,11 @@ body {
 	}
 	.product img {
 		width: 100%;
-/*
-    position: absolute;
-    clip: rect(50px,50px,50px,50px);
-*/
+
 	}
 .glow {
-/*	visibility: hidden;*/
-/*  position: relative;*/
   width: 100%;
 	margin: auto;
-/*  height: 30vw;*/
-/*  line-height: 30vw;*/
-/*  text-align: center;*/
-/*  color: #252B37;*/
-/*  background-color: #151823;*/
-/*  animation: textColor 10s ease infinite;*/
 }
 
 /*	bottom*/
@@ -520,33 +644,20 @@ body {
 	padding: 0px;
 	width: 100%;
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.50)
     ),url(../img/man2.jpg);
-	background-repeat: no-repeat;
-    background-size: 140% auto;
-    background-position: 100% -1px;
-	background-attachment: ;
-	text-align: center;
+    background-size: auto 100%;
+    background-position: 70% -1px;
 }
 
 .CoolTag {
-	height: 35%;
     width: 80%;
-    margin: 0 auto;
-    padding: 30px;
-	padding-bottom: 0;
 	padding-top: 80px;
-	
 }
-.bottomH2 {
-/*    padding: 10px;*/
-/*    border: .5px solid ;*/
-/* 	font-size: 1.3em;*/
-/*	margin-bottom: 0;*/
-}
+
 	
-.footer {
+.footer p{
 	font-size: 10pt;
 }
 	
