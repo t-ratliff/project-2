@@ -1,3 +1,5 @@
+
+
 /*NAV BAR====================================================*/
 body {
     overflow-x: hidden;
@@ -14,16 +16,16 @@ body {
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 80px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    left: 80px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -80px;
     overflow-y: auto;
     background: #000;
     -webkit-transition: all 0.5s ease;
@@ -33,7 +35,7 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 80px;
 }
 
 #page-content-wrapper {
@@ -44,7 +46,7 @@ body {
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -80px;
 }
 
 /* Sidebar Styles */
@@ -59,8 +61,8 @@ body {
 }
 
 .sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
+    text-indent: 0px;
+    line-height: 0px;
 }
 
 .sidebar-nav li a {
@@ -101,7 +103,7 @@ body {
     }
 
     #wrapper.toggled {
-        padding-left: 250px;
+        padding-left: 80px;
     }
 
     #sidebar-wrapper {
@@ -109,7 +111,7 @@ body {
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        width: 250px;
+        width: 80px;
     }
 
     #page-content-wrapper {
@@ -123,12 +125,14 @@ body {
     }
 }
 /*my nav changes*/
+/*
 #sidebar-wrapper {
     left: 200px;
     width: 0;
     height: 100%;
     margin-left: -200px;
 }
+*/
 .sidebar-nav li {
     margin: 10px;
 }
@@ -143,22 +147,14 @@ body {
 	padding: 8px;
 }
 
-
-
-body{
-	background-color: #4d4d4d
-}
-
 .nav li {
 	visibility: hidden;
 	height: 100%;
 	width: 10%;
 	background-color: red;
 }
-/*top section ===============================================*/
-.top {
-    background: darkgray;
-}
+
+/*top section ======================================================================================*/
 
 .biglogo {
 	height: 35%;
@@ -167,24 +163,36 @@ body{
     padding-top: 80px;
 }
 
+.top svg {
+    margin: 0 auto;
+    display: block;
+    margin-top: 0px ;
+    
+}
+.topline  {
+    margin-top: 50px;
+}
+
 .topP {
     height: 35%;
     width: 35%;
     margin: 0 auto;
-    padding-top: 90px;
+    padding: 30px;
+}
 
+.bottomline {
+    margin-top: 0px;
 }
 
 .topButton {
     height: 35%;
     width: 35%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-bottom: 80px;
 
 }
-
-.btn{
-    background-color: none;
+.top article {
+    height: 7vh;
 }
 
 /*button==============*/
@@ -194,7 +202,7 @@ body{
   text-transform: uppercase;
   font-weight: normal;
   font-style: normal;
-  font-size: 0.625rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3em;
   color: rgba(223,190,106,0.7);
   border-radius: 0;
@@ -220,10 +228,10 @@ body{
 body {
   background: #231f20;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arials, sans;
+  /*font-family: "Helvetica Neue", Helvetica, Arials, sans;*/
 }
 article {
-  height: 100vh;
+  height: 12vh;
 }
 div.center {
   text-align: center;
@@ -246,20 +254,199 @@ div.center::after {
   clear: both;
 }
 /*button END==============*/
-article {
-  height: 20vh;
+.hamburger a {
+padding: 18px 18px 18px;
+margin-left: 20px;
 }
+.hamburger {
+	position:fixed;
+  z-index: 1000;
+}
+
+.top {
+    background: url(img/Black_Bottle.png);
+    background-color: #333;
+}
+
+.topButton {
+  margin-bottom: 200px;
+}
+
 /*top section END ===============================================*/
 
 /*middle ===========================================================*/
 .middle {
-    padding-top: 200px;
-}
-/*middle END =======================================================*/
-
-
-
-h1{
-    color: gold;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
+
+.product {
+  /*border: 80px, 80px, 80px, 80px;*/
+    display: inline-block;
+    width: 28%;
+    padding: 4%;
+    text-align: left;
+	vertical-align: top;
+}
+
+
+.productbottle {
+    width: 100%;
+}
+
+/*glow ===========================================================*/
+.glow {
+  position: relative;
+  width: 95%;
+  /*height: 30vw;*/
+  /*line-height: 30vw;*/
+  text-align: center;
+  color: #252B37;
+  background-color: #151823;
+  animation: textColor 10s ease infinite;
+}
+.glow:after {
+  position: absolute;
+  content: "";
+  top: 3vw;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  transform: scale(0.75);
+  -webkit-filter: blur(5vw);
+  -moz-filter: blur(5vw);
+  -ms-filter: blur(5vw);
+  filter: blur(5vw);
+  background: linear-gradient(270deg, #0fffc1, #7e0fff);
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite;
+
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes textColor {
+  0% {
+    color: #7e0fff;
+  }
+  50% {
+    color: #0fffc1;
+  }
+  100% {
+    color: #7e0fff;
+  }
+}
+/*glow End =========================================================*/
+/*middle END =======================================================*/
+
+/*bottom ===========================================================*/
+
+  .bottom {
+	padding: 120px;
+	width: 100%;
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,1) 65%,rgba(0,0,0,1) 100%),url(../img/man2.jpg);
+	background-repeat: no-repeat;
+    background-size: auto 150%;
+    background-position: -475px -1px;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.CoolTag {
+	height: 35%;
+    width: 35%;
+    margin: 0 auto;
+    padding: 30px;
+	padding-bottom: 0;
+	
+}
+.bottomH2 {
+    padding: 10px;
+    border: .5px solid ;
+ 	font-size: 1.3em;
+	margin-bottom: 0;
+}
+
+.coolGuyLine line {
+	stroke: rgb(223,190,106); 
+	stroke-width:1;
+}
+
+.coolGuyLine{
+	margin: 0;
+	padding: 0,;
+}
+
+.bottom p {
+	text-align: left;
+}
+
+/*bottom END =======================================================*/
+
+
+/*Global changes*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414
+}
+
+h2{
+    color: rgb(223,190,106);
+    text-align: center;
+}
+p {
+  font-weight: 100;
+}
+
+.footer {
+  float: right;
+  margin-top: 10px;
+  margin-right: 15px;
+  font-weight: 100;
+}
+
+.top {
+    background-image: url("../img/heroimg.jpg");
+/*    background-color: #1c1c1c;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*Media Queries =======================================================*/
+
+/*desktop 1440x900, tablet portrait 768x1024, tablet landscape 1024x768, mobile phone 640x960*/
+
+
+
+@media (max-width: 1024px) {
+
+  }
+
+@media (max-width: 768px) {
+
+  }
+
+@media (max-width: 960px) {
+	
+	body {
+		color: firebrick
+	}
+	
+  }
