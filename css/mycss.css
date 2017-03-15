@@ -436,17 +436,118 @@ p {
 
 
 @media (max-width: 1024px) {
-
+body {
+	color: turquoise
+}
   }
 
 @media (max-width: 768px) {
 
+	body {
+	color: magenta
+}
+	
   }
 
 @media (max-width: 960px) {
 	
-	body {
-		color: firebrick
+body {
+	color: firebrick
+}
+
+/*top*/
+	.biglogo {
+		width: 70%;
 	}
+
+	p {
+		font-size: 15pt;
+	}
+	
+	.topP {
+		width: 80%;
+	}
+	
+	.topButton{
+		width: 80%;
+		margin-bottom: 0;
+	}
+	
+/*Middle*/
+.middle {
+    padding-bottom: 100px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.product {
+    display: block;
+    width: 100%;
+	padding: 0;
+    padding-bottom: 90px;
+	margin: auto;
+/*    text-align: left;*/
+/*	vertical-align: top;*/
+}
+	.product p {
+		width: 80%;
+		margin: auto;
+	}
+	.product img {
+		width: 100%;
+/*
+    position: absolute;
+    clip: rect(50px,50px,50px,50px);
+*/
+	}
+.glow {
+/*	visibility: hidden;*/
+/*  position: relative;*/
+  width: 100%;
+	margin: auto;
+/*  height: 30vw;*/
+/*  line-height: 30vw;*/
+/*  text-align: center;*/
+/*  color: #252B37;*/
+/*  background-color: #151823;*/
+/*  animation: textColor 10s ease infinite;*/
+}
+
+/*	bottom*/
+	  .bottom {
+	padding: 0px;
+	width: 100%;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),url(../img/man2.jpg);
+	background-repeat: no-repeat;
+    background-size: 140% auto;
+    background-position: 100% -1px;
+	background-attachment: ;
+	text-align: center;
+}
+
+.CoolTag {
+	height: 35%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+	padding-bottom: 0;
+	padding-top: 80px;
+	
+}
+.bottomH2 {
+/*    padding: 10px;*/
+/*    border: .5px solid ;*/
+/* 	font-size: 1.3em;*/
+/*	margin-bottom: 0;*/
+}
+	
+.footer {
+	font-size: 10pt;
+}
 	
   }
